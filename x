@@ -61,7 +61,7 @@ print F @lines;
 close F;
 
 # 清除DNS缓存
-my $dnsCheckResult = `ps aux | grep "^_mdnsresponder2"`;
+my $dnsCheckResult = `ps aux | grep "^_mdnsresponder"`;
 if ($dnsCheckResult) {
   `sudo killall mDNSResponder`;
 }
